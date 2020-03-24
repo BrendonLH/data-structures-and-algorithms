@@ -154,6 +154,22 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let outputArray = [];
+  arr.forEach(function(element, index, array){
+    if(element % 3 === 0 && element % 5 === 0) {
+      outputArray.push('Fizz Buzz');
+    }
+    else if(element % 3 === 0){
+      outputArray.push('Fizz');
+    }
+    else if(element % 5 === 0){
+      outputArray.push('Buzz');
+    }
+    else {
+      outputArray.push(element);
+    }
+  });
+  return outputArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
