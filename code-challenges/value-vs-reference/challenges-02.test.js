@@ -30,7 +30,7 @@ console.log(a) prints [1, 2, 3, 1]
 const appendFirstToLast = (arr) => {
   // Solution code here...
   arr.push(arr[0]);
-  console.log(arr);
+//   console.log(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,6 +50,9 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+  console.log(obj);
+  obj.yearBorn = year;
+  console.log(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -119,7 +122,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should add a property to an object', () => {
     const a = { fullName: 'Octavia Butler' };
     addBirthYearProperty(a, 1947);
