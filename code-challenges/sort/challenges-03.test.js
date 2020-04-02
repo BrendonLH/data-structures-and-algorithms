@@ -26,8 +26,14 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
-  arr.sort( (a,b) => {
-    return a > b;
+  arr.sort(function(a,b) {
+    if (a < b) {
+      return -1;
+    }
+    if (a > b) {
+      return 1;
+    }
+    return 0;
   });
   return arr;
 };
@@ -56,8 +62,14 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
-  arr.sort( (a,b) => {
-    return a.toLowerCase() > b.toLowerCase();
+  arr.sort(function(a,b) {
+    if(a.toUpperCase() < b.toUpperCase()) {
+      return -1;
+    }
+    if(a.toUpperCase() > b.toUpperCase()) {
+      return 1;
+    }
+    return 0;
   });
   return arr;
 };
