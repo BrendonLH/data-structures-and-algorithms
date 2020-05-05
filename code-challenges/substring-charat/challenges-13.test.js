@@ -10,6 +10,9 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 
 const firstLetters = (arr) => {
   // Solution code here...
+  let newArr = [];
+  arr.forEach(element => newArr.push(element.charAt(0)));
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,7 +25,13 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
+  return arr.filter( value => {
+    if(value.includes (':)')){
+      return value;
+    }
+  });
 };
+  
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -34,6 +43,11 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
+  return arr.reduce((accumulate, value) => {
+    let newVal = value.replace(/\D/g, '');
+    accumulate.push(newVal);
+    return accumulate;
+  },[]);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +60,12 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  let odd = str.split('');
+  return odd.filter((value,index) => {
+    if(index%2 !==0) {
+      return value;
+    }
+  }).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,6 +76,15 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  let answer = arr.filter(value => {
+    return value.includes(':)');
+  });
+  if(arr.length !== answer.length) {
+    return false;
+  }
+  else {
+    return true;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -154,7 +183,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return only the strings that contain smiley faces', () => {
     const words = ['things', 'apple (:)', ':)banana', 'missing that thing', 'cant:)aloupe'];
 
@@ -165,7 +194,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return a standardized set of phone numbers', () => {
     const nums = ['(123) 456-7890', '(222) 222-2222'];
 
@@ -174,7 +203,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should only return the odd indexed characters from the string', () => {
     expect(onlyOddChars('0123456789')).toStrictEqual('13579');
     expect(onlyOddChars('abcd')).toStrictEqual('bd');
@@ -183,7 +212,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should correctly assess whether all the strings are happy', () => {
     const words = ['things', 'apple (:)', ':)banana', 'missing that thing', 'cant:)aloupe'];
 
