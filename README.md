@@ -1,8 +1,42 @@
 # Data Structures and Algorithms
 
-## Create a copy of this repository
+## Table of Contents
+ 
+ ### Arrays
+  - [Reverse](./arrays/reverse/README.md)
 
-1. Create a new repository in your GitHub account called `data-structures-and-algorithms`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ## Create a copy of this repository -->
+
+<!-- 1. Create a new repository in your GitHub account called `data-structures-and-algorithms`
 1. Clone the empty repository to your machine
 1. Choose the "Download" option under "Clone or Download" for this repository
 1. Copy that .zip file inside of the local `data-structures-and-algorithms` repo created in step 2
@@ -62,4 +96,4 @@ The final structure should resemble this:
   ├── package-lock.json
   ├── package.json
   └── README.md
-```
+``` -->
