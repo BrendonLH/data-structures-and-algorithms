@@ -2,7 +2,7 @@
 
 
 //  push method
-let push = ((arr, val) => {
-    array[arr.length] = val;
-})
+// let push = ((arr, val) => {
+//     array[arr.length] = val;
+// })
 
