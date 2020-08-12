@@ -4,7 +4,7 @@
  
  ### Arrays
   - [Reverse](./arrays/reverse/README.md)
-  - [Shift](./arrays/shift/REDME.md)
+  - [Shift](./arrays/shift/README.md)
 
 
 
