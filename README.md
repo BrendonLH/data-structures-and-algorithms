@@ -5,6 +5,7 @@
  ### Arrays
   - [Reverse](./arrays/reverse/README.md)
   - [Shift](./arrays/shift/README.md)
+  - [Binary Search](./arrays/binary-search/README.md)
 
 
 
