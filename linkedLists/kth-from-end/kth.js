@@ -55,4 +55,7 @@ class Node {
   list.append(2);
   list.append(3);
   
-  console.log(list.kthFromEnd(list,1));
+  // console.log(list.kthFromEnd(list,0));
+
+  module.exports = Node;
+  module.exports = LinkedList;
