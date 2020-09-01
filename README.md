@@ -14,7 +14,7 @@
   - [Linked Lists](./linkedLists/code-challenge-05/README.md)
   - [Insertions](./linkedLists/insertions/README.md)
   - [Kth-From-End](./linkedLists/kth-from-end/README.md)
-  - [LL-Zip](./linkedLists/llZIp/README.md);
+  - [LL-Zip](./linkedLists/llZip/README.md)
 
 
 
