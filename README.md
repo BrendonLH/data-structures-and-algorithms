@@ -6,7 +6,16 @@
   - [Reverse](./arrays/reverse/README.md)
   - [Shift](./arrays/shift/README.md)
   - [Binary Search](./arrays/binary-search/README.md)
-  - [Linked Lists](./linked-lists/linkedLists/README.md)
+
+
+
+
+  ### Linked Lists
+  - [Linked Lists](./linkedLists/code-challenge-05/README.md)
+  - [Insertions](./linkedLists/insertions/README.md)
+  - [Kth-From-End](./linkedLists/kth-from-end/README.md)
+  - [LL-Zip](./linkedLists/llZIp/README.md);
+
 
 
 
