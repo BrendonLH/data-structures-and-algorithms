@@ -28,32 +28,40 @@ class LinkedList {
     }
 
     includes(value) {
+        if(this.head == null){
+            return 'No Match';
+        }
         let current = this.head;
-        while(current.next) {
+        while(current != null) {
+            if(current.value == value) {
+                console.log(current.value);
+                return; 
+            }
             current = current.next;
         }
-        if(current.value == value) {
-            console.log(current.value);
-        } else {
-            return 'no match';
-        }
+        return 'no match';
         
     }
 
     toString(value) {
+        let newStr = '';
+        let current = this.head;
+        while(current != null) {
+            newStr += `${current.value} => `; 
 
+            current = current.next;
+        }
+        newStr += 'NULL';
+        return newStr; 
     }
 }
 
 let list = new LinkedList();
-list.add('test1');
-list.add('test2');
-list.add('test3');
+list.add('1');
+list.add('2');
+list.add('3');
 
-console.log(list.includes('test3'));
-// console.log(list);
-
-// console.log(list.add('test1'));
-// console.log(list.head.value);
+// console.log(list.includes('test3'));
+console.log(list.toString(list));
 
 module.exports = list;
