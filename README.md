@@ -16,6 +16,9 @@
   - [Kth-From-End](./linkedLists/kth-from-end/README.md)
   - [LL-Zip](./linkedLists/llZip/README.md)
 
+  ### Stacks and Queues
+  - [Stacks and Queues](./stacksAndQueues/README.md)
+
 
 
 
