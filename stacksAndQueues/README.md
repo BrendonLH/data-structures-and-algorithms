@@ -35,10 +35,14 @@
 <!-- Embedded whiteboard image -->
 
 
-![Stacks and Queues](stacksQueues.png)
+![Stacks and Queues](stacksandqueues.png)
 
 ## Notes
 
-9/12/2021 8:13am
+9/12/2020 8:13am
 
 - Just got back from emergency room setting up scaffolding and adding the Whiteboard.
+
+9/14/2020
+
+- finished the whiteboarding. 
