@@ -46,3 +46,7 @@
 9/14/2020
 
 - finished the whiteboarding. 
+
+9/15/2020
+
+finished the tests, Should be all done. I also decided to require the other Nodes to the Queue rather than build it all out again. 
