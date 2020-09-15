@@ -26,8 +26,4 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 
 9/14/2020 9:02pm
 
-- Just got back from emergency room setting up scaffolding and adding the Whiteboard.
-
-9/14/2020
-
-- finished the whiteboarding. 
+- finished whiteboard, setup scaffolding.
