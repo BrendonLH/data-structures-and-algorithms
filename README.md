@@ -17,7 +17,9 @@
   - [LL-Zip](./linkedLists/llZip/README.md)
 
   ### Stacks and Queues
-  - [Stacks and Queues](./stacksAndQueues/README.md)
+  - [Code challenge 10](./stacksAndQueues/README.md)
+  - [Que With Stacks](./queWithStacks/README.md)
+  - [Fifo Animal Shelter](./fifoAnimalShelter/README.md)
 
 
 

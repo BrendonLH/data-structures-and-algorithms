@@ -39,8 +39,17 @@ class Stack {
             return 'Empty Stack'
         }else {
         return this.top;
+        }
     }
-}
+
+    isEmpty() {
+        if(this.size == null) {
+            return `${false}: Nothing in stack`;
+        } else { 
+            return `${true}: Data Available`;
+        }
+    }
 }
 
 module.exports = Stack;
+module.exports = Node; 
