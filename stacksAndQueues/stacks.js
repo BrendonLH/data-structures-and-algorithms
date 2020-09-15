@@ -27,7 +27,7 @@ class Stack {
     pop() {
         if(this.size > 0) {
             this.size--;
-            var top = this.top;
+            let top = this.top;
             this.top = this.top.next; 
             return top.Value; 
         } else {

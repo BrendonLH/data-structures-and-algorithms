@@ -9,24 +9,24 @@ test('checks if tests are hooked up', () => {
     }
     expect(add(1,1)).toBe(2);
     console.log('hooked up');
-})
+});
 
 test('can succefully push onto a stack', () => {
     let stack = new Stack();
     stack.push(1);
     expect(stack.top.value).toBe(1);
 
-})
+});
 test('can succefully pop from a stack', () => {
     let stack = new Stack();
     stack.push(1);
     stack.push(2);
     stack.push(3);
     stack.pop();
-    // console.log(stack);
+    console.log(stack);
     expect(stack.top.value).toBe(2);
 
-})
+});
 test('can succefully peek the next item from a stack', () => {
     let stack = new Stack();
     stack.push(1);
