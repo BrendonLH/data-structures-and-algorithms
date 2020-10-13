@@ -8,6 +8,7 @@ class Node {
     }
 }
 
+
 class BinarySearchTree {
     constructor(value) {
         this.root = new Node(value);
