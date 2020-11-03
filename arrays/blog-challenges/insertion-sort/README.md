@@ -16,7 +16,7 @@
 <!-- Embedded whiteboard image -->
 
 
-[Insertion Sort](https://docs.google.com/document/d/1pPe-wZsx7CJ6_03cpd06aGEw_Z37YDjnCd6bzVHzKv8/edit)
+[Insertion Sort](https://docs.google.com/document/d/1pPe-wZsx7CJ6_03cpd06aGEw_Z37YDjnCd6bzVHzKv8/edit?usp=sharing)
 
 ## Notes
 
