@@ -27,15 +27,20 @@ let input = [8,4,23,42,16,15];
 
  - In order to make the smaller pieces, we need to first set a **Pivot** point that will help divide our data. The pivot point is used to set anything smaller than the pivot to the left(low) and anything higher (high) to the right of the pivot point. 
 
+
  - After we set the pivot and move any data to the according left or right, we can then sort the sides resulting in a sorted data set. 
 
- - When we set the Pivot element, we First need to determine where that is. The best performance is in the middle of the dataset, so we set it there. Pivot = [42]
+ - When we set the Pivot element, we First need to determine where that is. The best performance is in the middle of the dataset but we can set it anywhere, so we will set it to the last element in the dataset. Pivot = [15]
 
  - now that we have our pivot point we need to start moving everything to the left and the right of that point.
 
  - the steps are repeated on the left and right making a left and right again for the the new arrays. These are then sorted and eventually brought back together. 
 
  output = [4,8,15,16,23,42].
+
+
+
+ ![Visual](./quickSort.png)
     
  
 
