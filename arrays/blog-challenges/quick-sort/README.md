@@ -23,7 +23,7 @@
 
 let input = [8,4,23,42,16,15];
 
- - Quicksort is takes a Divide and Conquer approach. We use Quicksort to divide the data set into smaller pieces and then call a sort function on those smaller pieces to make the process faster than sorting through the entire dataset as a whole.
+ - Quicksort takes a Divide and Conquer approach. We use Quicksort to divide the data set into smaller pieces and then call a sort function on those smaller pieces to make the process faster than sorting through the entire dataset as a whole.
 
  - In order to make the smaller pieces, we need to first set a **Pivot** point that will help divide our data. The pivot point is used to set anything smaller than the pivot to the left(low) and anything higher (high) to the right of the pivot point. 
 
