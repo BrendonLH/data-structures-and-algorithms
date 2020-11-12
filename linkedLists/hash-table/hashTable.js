@@ -29,7 +29,7 @@ class LinkedList {
 class HashMap {
     constructor(size) {
         this.size = size;
-        this.storage = new Array(size);
+        this.buckets = new Array(size);
     }
 
     hash(key){
@@ -40,21 +40,33 @@ class HashMap {
 
     set(key, value) {
         let hash = this.hash(key);
-        if(!this.storage[hash]) {
+        if(!this.buckets[hash]) {
             let linkedList = new LinkedList();
             linkedList.append([key,value]);
-            this.storage[hash] = linkedList;
+            this.buckets[hash] = linkedList;
         } 
         else {
-            this.storage[hash].append([key, value]);
+            this.buckets[hash].append([key, value]);
         }
     }
 
-    get() {
-
-    }
-
-    contains() {
+    get(key) {
+        for(let i = 0; i <= this.buckets.length; i++) {
+            console.log(this.buckets[i]);
+            }
+            return this; 
         
     }
+
+    contains(key) {
+
+    }
 }
+
+const hashMap = new HashMap(5);
+hashMap.set('apple', 2);
+hashMap.get();
+
+
+// console.log(hashMap.buckets);
+
