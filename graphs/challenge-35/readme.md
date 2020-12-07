@@ -24,12 +24,15 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
     Returns a collection of edges connected to the given node
     Takes in a given node
     Include the weight of the connection in the returned collection
-    
+
     Size()
     Returns the total number of nodes in the graph
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+    my approach was to try to understand how this thing even works by looking up a ton of videos and still being just as confused as before
 
 ## API
 <!-- Description of each method publicly available in your Graph -->
+
+add nodes
