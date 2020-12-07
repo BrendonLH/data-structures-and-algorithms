@@ -1,6 +1,6 @@
 'use strict'; 
 
-const Stack = require('../../stacksAndQueues/code-challenge-10/stacks.js');
+
  
 class Vertex {
     constructor(data) {
@@ -63,10 +63,63 @@ class Graph {
         
     }
 
-    depthFirst(startNode) {
-        let stack = new Stack();
-        stack.push(startNode);
-        console.log(stack);
+    visited(node) {
+        return node.discovered = true;
+    }
+
+    getAdjacentNodes(startNode, vertices, edges) {
+        let adjacentNodes = [];
+
+        edges.forEach(function(edge) {
+            if(edge[0] === startNode.name) {
+                let adjacentNode = vertices.find(function(vertex) {
+                    return Vertex.name === edge[1];
+                });
+
+                if(adjacentNode) {
+                    let adjacentIndex = vertices.indexOf(adjacentNode);
+
+                    vertices.splice(adjacentIndex,1);
+                    visited(adjacentNode);
+                    adjacentNodes.push(adjacentNode);
+
+                }
+            } else if (edge[1] === startNode.name) {
+                let adjacentNode = vertices.find(function(vertex) {
+                    return Vertex.name === edge[0];
+                });
+                if(adjacentNode) {
+                    let adjacentIndex = vertices.indexOf(adjacentNode);
+                    vertices.splice(adjacentIndex, 1); 
+                    visited(adjacentNode);
+                        adjacentNodes.push(adjacentNode);
+                }
+            }
+        });
+        return adjacentNodes;
+    }
+
+    depthFirst(startNode, vertices, edges) {
+        let queue = [];
+        let visited = [];
+        let currentNode;
+        console.log('vertices', vertices);
+        let rootIndex = vertices.indexOf(startNode);
+
+        queue.push(startNode);
+        vertices.splice(rootIndex, 1);
+        visited.push(startNode);
+
+        while(queue != 0) {
+            currentNode = queue.pop();
+            let adjacencyList = getAdjacentNodes(currentNode, vertices, edges);
+            adjacencyList.forEach(function(node) {
+                visited.push(node);
+                queue.push(node);
+            })
+        }
+        return visited;
+        
     }
 
     getNeighbors(vertex) {
@@ -107,4 +160,5 @@ console.log(graph);
 // console.log(graph.breadthFirst(ten));
 // console.log(graph.breadthFirst(seven));
 
-graph.depthFirst();
+
+graph.depthFirst(queue);
