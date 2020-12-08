@@ -161,4 +161,4 @@ console.log(graph);
 // console.log(graph.breadthFirst(seven));
 
 
-graph.depthFirst(queue);
+graph.depthFirst();
