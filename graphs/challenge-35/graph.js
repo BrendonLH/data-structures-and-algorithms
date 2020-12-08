@@ -17,6 +17,7 @@ class Edge {
 
 class Graph {
     constructor() {
+        // creates a new array of the same list
         this.adjacencyList = new Map(); 
     }
 
@@ -157,8 +158,8 @@ graph.addUndirectedEdge(two, seven);
 
 console.log(graph);
 
-// console.log(graph.breadthFirst(ten));
-// console.log(graph.breadthFirst(seven));
+console.log(graph.breadthFirst(ten));
+console.log(graph.breadthFirst(seven));
 
 
-graph.depthFirst();
+graph.depthFirst(ten, two);
